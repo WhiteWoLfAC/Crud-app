@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container w-50 mt-5">
+    <h1 class="text-center m-3">Add Product</h1>
+    <label for="Name">NameProduct</label>
+    <input class="form-control" type="text" id="Name">
+
+    <label for="Price">ProductPrice</label>
+    <input class="form-control" type="number" id="Price">
+
+    <label for="category">ProductCategory</label>
+    <input class="form-control" type="text" id="category">
+
+    <label for="model">ProductModel</label>
+    <input class="form-control" type="text" id="model">
+
+    <button class="btn btn-primary mt-3" type="button" onclick="addproduct()">Add Product</button>
+
+<h1 class="text-center mt-5">Product List</h1>
+    <table class="table mt-5 table-hover table-bordered text-center">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">NameProduct</th>
+          <th scope="col">ProductPrice</th>
+          <th scope="col">ProductCategory</th>
+          <th scope="col">ProductModel</th>
+          <th scope="col">Delete</th>
+          <th scope="col">update</th>
+        </tr>
+      </thead>
+      <tbody id="ProductTable">
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container w-25 mt-5">
+    <div class="updateform">
+      <div class="overlay">
+        <i id="closeUpdateForm" onclick="closeUpdateForm()" class="close fa-regular fa-circle-xmark"></i>
+        <label for="updateName">NameProduct</label>
+        <input class="form-control" type="text" id="updateName">
+
+        <label for="updatePrice">ProductPrice</label>
+        <input class="form-control" type="text" id="updatePrice">
+
+        <label for="updateCategory">ProductCategory</label>
+        <input class="form-control" type="text" id="updateCategory">
+
+        <label for="updateModel">ProductModel</label>
+        <input class="form-control" type="text" id="updateModel">
+
+        <button class="btn btn-primary mt-5" type="button" onclick="updateproductinfo()">Update Product</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.updateform{
+    padding: 20PX;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0,0,0,0.5);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+.overlay {
+    width: 55%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+.close{
+    font-size: 30px;
+    position: absolute;
+    top: 36%;
+    right: 24%;
+    cursor: pointer;
+}
